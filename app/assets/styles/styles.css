@@ -3,6 +3,7 @@
 @import "modules/_large-hero";
 
 /*overlay text on top of image*/
+/*BEM = Block -- Element -- Modifier*/
 .large-hero__text-content{
   position: absolute;
   top: 50%;
