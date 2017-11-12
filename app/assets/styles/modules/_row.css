@@ -1,0 +1,22 @@
+.row {
+  @mixin clearfix;
+
+  &--gutters {
+    margin-right: -65px; /*protruding the row out of wrapper by 65px to push text to the right*/
+  }
+
+  &--gutters > div {
+    padding-right: 65px;
+  }
+  /*column grid aplied only on larger screens*/
+  @mixin atMedium {
+    &__medium-4 {
+      float: left;
+      width: 33.33%;
+    }
+    &__medium-8 {
+      float: left;
+      width: 66.66%;
+    }
+  }
+}
