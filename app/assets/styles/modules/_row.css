@@ -8,15 +8,30 @@
   &--gutters > div {
     padding-right: 65px;
   }
+/*affects small screen sizes until they get to medium size*/
+  &__b-margin-until-medium {
+    margin-bottom: 1rem;
+
+  }
   /*column grid aplied only on larger screens*/
   @mixin atMedium {
+    /*for larger sizez, bigger than medium, override the margin bottom previously set*/
+    &__b-margin-until-medium {
+      margin-bottom: 0;
+    }
     &__medium-4 {
       float: left;
       width: 33.33%;
     }
+    &__medium-4--larger {
+      width: 37%;
+    }
     &__medium-8 {
       float: left;
       width: 66.66%;
+    }
+    &__medium-8--smaller {
+      width: 63%;
     }
   }
 }
