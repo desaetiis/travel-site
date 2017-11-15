@@ -12,6 +12,7 @@
 @import "modules/_section-title";
 @import "modules/_feature-item";
 @import "modules/_testimonial";
+@import "modules/_sprite";
 
 /*overlay text on top of image*/
 /*BEM = Block -- Element -- Modifier*/
