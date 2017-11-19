@@ -1,18 +1,22 @@
-.large-hero{
+.large-hero {
   border-bottom: 10px solid $mainBlue;
   position: relative;
 
-  &__image{
+  &__image {
     /*display block will eliminate the white space between the image and the blue bar under it*/
     display: block;
   }
-  &__text-content{
+  &__text-content {
+    padding-top: 88px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
     width: 100%;
     text-align: center;
+    @mixin atMedium {
+      padding-top: 60px;
+    }
   }
   &__title{
     font-weight: 300;
