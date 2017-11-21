@@ -11,7 +11,7 @@ gulp.task('watch', function() {
         server: {
             baseDir: "app"
         }
-    })
+    });
 
     watch('./app/index.html', function() {
         browserSync.reload(); /* looks for changes to the html file and reloads browser on index.html save*/
